@@ -1,0 +1,122 @@
+/* Main Container */
+.Container {
+  background-color: #f8fafc; /* Changed from blue to a more neutral color */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full height coverage */
+}
+
+/* Header Section */
+.bestSellarContainer {
+  width: 100%;
+  background-color: transparent; /* Removed bisque, let it inherit */
+  padding: 2rem 0 1rem 0; /* More responsive padding */
+  text-align: center;
+}
+
+/* Swiper Container */
+.swiperContainer {
+  width: 100%;
+  margin: 2rem 0; /* Increased margin for better spacing */
+  padding: 1rem 0;
+  background-color: transparent; /* Let it inherit from parent */
+  position: relative; /* For custom navigation positioning */
+}
+
+/* Swiper Styles */
+.swiper {
+  width: 100%;
+  min-height: 400px; /* Increased for better card display */
+  padding-bottom: 3rem; /* Space for pagination/navigation */
+  overflow: visible; /* Allow custom navigation to show */
+}
+
+/* Swiper Slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensure all cards have same height */
+  height: auto;
+}
+
+/* Custom Navigation Buttons */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  display: none; /* Hide on mobile by default */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .bestSellarContainer {
+    padding: 3rem 0 2rem 0;
+  }
+  
+  .swiperContainer {
+    margin: 3rem 0;
+    padding: 1.5rem 0;
+  }
+  
+  .swiper {
+    min-height: 450px;
+  }
+  
+  /* Show navigation on larger screens */
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .Container {
+    background-color: #ffffff; /* White background on mobile for cleaner look */
+  }
+  
+  .bestSellarContainer {
+    padding: 1.5rem 0 1rem 0;
+  }
+  
+  .swiperContainer {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }
+  
+  .swiper {
+    min-height: 350px;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  /* Remove the cardImage scale - let ProductCard handle its own responsiveness */
+  /* .cardImage {
+    transform: scale(1.9); // This might cause overflow issues
+  } */
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    min-height: 320px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  
+  .bestSellarContainer {
+    padding: 1rem 0 0.5rem 0;
+  }
+}
+
+/* Additional improvements */
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #3b82f6 !important;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}

@@ -1,0 +1,21 @@
+.card {
+  width: 85%;
+    height: 250px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  box-shadow:
+    inset 4px 4px 10px rgba(126, 126, 126, 0.1),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.46);
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* 🔽 Shrink card on small screens (e.g., phones) */
+@media (max-width: 640px) {
+  .card {
+    width: 70%;
+    height: 200px;
+  }
+}

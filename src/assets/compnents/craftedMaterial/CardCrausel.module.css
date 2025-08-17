@@ -1,0 +1,85 @@
+.carouselContainer {
+  /* padding: 4; */
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
+  
+}
+
+.swiper {
+  padding: 20px 0;
+  padding-bottom:50px;
+  height: 200%;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  transform: scale(1.6);
+   /* box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.2);/ */
+   filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.3));
+ 
+}
+
+.cardTitle {
+  margin-top:20px;
+  font-size: 1rem;
+  font-weight: semibold;
+  position: absolute;
+  left: 5px;
+  color: rgba(85, 146, 245, 0.942);
+
+  
+
+}
+
+.cardprice
+{
+   margin-top:40px;
+  font-size: 1rem;
+  font-weight:bold;
+  position: absolute;
+  left: 5px;
+  color: rgba(68, 68, 68, 0.942);
+}
+
+
+
+.cart
+{
+  bottom:-12%;
+  font-size: 1rem;
+  font-weight:bold;
+  position: absolute;
+  right: 0;
+  right: 55px;
+  color: rgba(68, 68, 68, 0.942);
+    transform: scale(1.3);
+    /* background-color: rgba(81, 206, 255, 0.895); */
+    width: 25px;
+    height: 20px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 640px) {
+  .cardImage{
+    transform: scale(1.9);
+  }
+
+  .swiper {
+  /* padding: 2px 0; */
+  padding-bottom: 40px;
+  padding-left: 10px;
+  
+}
+
+.cart{
+ left: 55%;
+}
+}

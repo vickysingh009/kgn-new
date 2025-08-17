@@ -1,0 +1,42 @@
+.banner
+{
+    position: relative;
+}
+
+.textBox {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  color: white;
+  background-color: rgba(244, 105, 30, 0.8);
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  max-width: 20%;
+  max-height: 15%;
+
+  min-width: 25%;
+  min-height: 20%;
+  height: 30%;
+  z-index: 10;
+
+      /* breaks long words if needed */
+}
+
+.imgCss
+{
+
+  border-radius: 5px;
+  object-fit: cover;
+  scale:95%;
+
+}
+@media (max-width: 768px) {
+  .textBox {
+    display: none;
+  }
+
+  .imgCss{
+    scale:110%;
+  }
+}

@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body
+{
+    height: 2000px;
+    background-color: #faf9f6;
+}
+
+/* Hides scrollbar but keeps scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
